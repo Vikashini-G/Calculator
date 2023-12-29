@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty calculator</title>
+    <p class="logo">&lt;/viki&gt;</p>
+    <span class="horLine"></span>
+    <div class="header">
+        <h1 id="heading">Pretty calculator</h1>
+        <span class="theline"></span>
+        <vr>
+        <p id="passi">In the vast expanse of the digital universe, our websites stand as digital ambassadors, greeting users and guiding them through the corridors of information. Yet, amid this virtual landscape, a distinct lack of cuteness prevails, an absence that's felt more deeply than we might realize.</p>
+    </div>
+    
+</head>
+<body>
+<form class="calcBody" name="myCalc">
+<input id="result" type="text" name="result">
+<div class="buttons">
+    <input class="button" type="button" value="1" onclick="myCalc.result.value += '1'">
+    <input class="button" type="button" value="2" onclick="myCalc.result.value += '2'">
+    <input class="button" type="button" value="3" onclick="myCalc.result.value += '3'">
+    <input class="button yel" type="button" value="+" onclick="myCalc.result.value += '+'">
+            
+    <input class="button" type="button" value="4" onclick="myCalc.result.value += '4'">
+    <input class="button" type="button" value="5" onclick="myCalc.result.value += '5'">
+    <input class="button" type="button" value="6" onclick="myCalc.result.value += '6'">
+    <input class="button yel" type="button" value="-" onclick="myCalc.result.value += '-'">
+            
+    <input class="button" type="button" value="7" onclick="myCalc.result.value += '7'">
+    <input class="button" type="button" value="8" onclick="myCalc.result.value += '8'">
+    <input class="button" type="button" value="9" onclick="myCalc.result.value += '9'">
+    <input class="button yel" type="button" value="*" onclick="myCalc.result.value += '*'">
+            
+    <input class="button ligreen" type="button"    value="/" onclick="myCalc.result.value += '/'">
+    <input class="button" type="button" value="0" onclick="myCalc.result.value += '0'">
+    <input class="button ligreen" type="button" value="." onclick="myCalc.result.value += '.'">
+    <input class="button yel" type="button" value="=" onclick="myCalc.result.value = eval(myCalc.result.value)">
+            
+    <input class="clear" type="button" value="Clear All" onclick="myCalc.result.value = ''">
+</div>
+</form>
+</body>
+</html>
